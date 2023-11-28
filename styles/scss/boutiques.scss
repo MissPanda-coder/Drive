@@ -1,0 +1,42 @@
+@import "accueil";
+
+.header__2{
+    margin: 50px 0 50px 0;
+    padding:20px 0 20px 0;
+    background-color: #aba9a9;
+}
+
+#boutiquespartenaires{
+    font-size: 2em;
+    color: aliceblue;
+
+}
+
+.select__value{
+    margin-top:10px;
+}
+.main__boutiques{
+    min-height:100vh;
+}
+
+.section__margin{
+    margin:0 0 40px 40px;
+}
+
+.gap__photos{
+    margin-bottom:20px;
+}
+.main__img{
+    border-radius: 5%;
+    box-shadow: 5px 7px 7px 0 #898989;
+}
+
+.main__enseignes{
+    font-family: 'Yellowtail', cursive;
+    font-size: 2em;
+}
+
+.btnSearchCommand{
+    @include btn;
+    margin:80px 0 0 40px;
+}

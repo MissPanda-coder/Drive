@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>
+      Le Beausset Drive, faites-vous livrer partout dans le Beausset
+    </title>
+  </head>
+  <body>
+    <!-- page accueil -->
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Le Beausset Drive</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Accueil"
+                  >Accueil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#boutiquespartenaires" >Boutiques partenaires</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Qui sommes-nous</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="rechercher"
+                aria-label="search"
+              />
+              <button class="btnSearch" type="submit">Rechercher</button>
+            </form>
+            </div>
+        </div>
+      </nav>
+</header>
+<main >
+<section class="accueil">
+    <div id="photo">
+<p class="text-light" id="title">Le Beausset Drive <img class="heart" src="img/heart.png" alt="coeur en contour rouge"></p>
+</div>
+<div class="text-secondary main__div-bienvenue">
+<strong> Bienvenue sur le site 100% livraison sur Le Beausset ! </strong><br><br>
+Notre jolie ville dispose de multiples artisans et commerces. Malheureusement, certains Beaussetans ne sont pas en capacité de se déplacer pour diverses raisons (handicap, âge, horaires de travail etc.). C'est pour cela que nous avons créé ce site, afin de permettre à tous les beaussetans qui le souhaitent de passer leurs commandes en ligne et être livrés directement à leur porte. 
+<br>
+L'offre s'étend de la livraison de vos courses, à la restauration, aux bijoux, à la déco etc. 
+<br>
+<br>
+Rendez-vous dans notre rubrique "boutiques partenaires" pour découvrir les boutiques ayant souscrit à la livraison à domicile. Vous serez ensuite redirigé sur la page du commerçant choisi afin de passer votre commande.
+</div>
+</section>
+
+
+
+<!-- page Boutiques partenaires -->
+
+<section class="main__boutiques"> 
+<header class="header__2">
+    <div class="container-fluid">
+    <div class="row">
+            <div class="col-lg-9">
+            <nav class="navbar-nav bg-body-tertiary"></nav>
+          <span class="navbar-brand" id="boutiquespartenaires">Les boutiques partenaires</span>
+        </div>
+    </nav>
+   <div class=" col-lg-2">
+    <select class=" form-select select__value" aria-label="Toutes les catégories">
+        <option selected>Toutes les catégories</option>
+        <option value="1">Bijoux</option>
+        <option value="2">Boulangerie/pâtisserie</option>
+        <option value="3">Pharmacie</option>
+        <option value="4">Vêtements</option>
+      </select>
+    </div>
+    </div>
+</div>
+</header>
+
+
+<section class="section__margin">
+    <div class="col-lg-7 gap__photos" id="main__grid-size">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="main__img" src="img/lePetrinDuBeausset.jpg" alt="boulangerie le pétrin du beausset">
+        </div>
+        <div class="col-lg-6">
+            <p class="main__enseignes">Le Pétrin du Beausset</p>
+            <p>La boulangerie Le Pétrin du Beausset vous propose à la livraison de délicieuses pâtisseries et viennoiseries
+                faites maison. Cliquez sur commander pour découvrir leurs produits et vous faire livrer ceux que vous aurez commandés.
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <button class="btnSearchCommand">Commander</button>
+        </div>
+    </div>
+</div>
+<div class="col-lg-7 gap__photos">
+    <div class="row">
+        <div class="col-lg-4" >
+            <img class="main__img" src="img/saoya.jpg" alt="Devanture de la boutique Sayoa créateur de bijoux">
+        </div>
+        <div class="col-lg-6">
+            <p class="main__enseignes">Sayoa</p>
+            <p>Du Made in France bien sûr… Un atelier-boutique au Beausset depuis 1991, une entreprise familiale (mère et fille en sont aujourd’hui les créatrices), qui su renouveler ses collections tout en gardant un style reconnaissable plein de charme. 
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <button class="btnSearchCommand">Commander</button>
+        </div>
+    </div>
+</div>
+<div class="col-lg-7 gap__photos">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="main__img" src="img/pharmacieArcade.jpg" alt="Devanture de la pharmacie des Arcades">
+        </div>
+        <div class="col-lg-6">
+            <p class="main__enseignes">Pharmacie des Arcades</p>
+            <p>L’officine vous propose désormais de nombreux services en ligne : envoi d’ordonnance, rendez-vous consultations, conseils santé… L’équipe vous orientera sur la solution la plus adaptée à votre pathologie.
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <button class="btnSearchCommand">Commander</button>
+        </div>
+    </div>
+</div>
+<div class="col-lg-7 gap__photos">
+    <div class="row">
+        <div class="col-lg-4">
+            <img class="main__img" src="img/lePetrinDuBeausset.jpg" alt="boulangerie le pétrin du beausset">
+        </div>
+        <div class="col-lg-6">
+            <p class="main__enseignes">Bergamote et Chocolat</p>
+            <p>Vous avez un petit creux. Envie d’une petite collation ? Dans la « Bergamote et chocolat », laissez-vous inspirer par un vaste choix de snacks faits maison.
+            </p>
+        </div>
+        <div class="col-lg-2">
+            <button class="btnSearchCommand">Commander</button>
+        </div>
+    </div>
+</div>
+    </section>
+</section>
+
+<!-- page Qui sommes-nous -->
+
+   <section class="main__boutiques">
+<header class="header__2" id="header__qsn">
+    <div class="container-fluid">
+<nav class="navbar-nav bg-body-tertiary"></nav>
+<span class="navbar-brand" id="contact">Qui sommes-nous ?</span>
+    </nav>
+</div>
+</header>
+    
+    <div class="presentation">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus laborum excepturi vel cumque, nesciunt, et nam rerum quod repellat culpa earum nihil consectetur. Nihil quis voluptates aspernatur dolores consequuntur vitae cupiditate deserunt ullam explicabo distinctio? Sint magnam, consequuntur, itaque vero voluptas placeat eligendi reprehenderit aut in amet voluptatem excepturi dolores nam expedita repudiandae quibusdam corrupti voluptatum. Molestias esse fugiat autem dolore nam. Quo sequi deserunt sed corporis? Porro, ut repellendus possimus inventore fugit sed voluptas iusto laudantium natus ullam. Assumenda fuga in corrupti explicabo aspernatur unde facere amet recusandae adipisci velit ipsam, hic consequuntur itaque iusto asperiores sapiente quo. Quis tempora sint dolores inventore, distinctio aliquam quae soluta quaerat, necessitatibus, velit sapiente omnis ipsum numquam! Ex numquam debitis quae atque repudiandae repellat magni perspiciatis voluptas placeat quidem doloremque excepturi, aliquid similique nam. Explicabo iure minus sunt repellendus fuga, deleniti aliquid velit eos! Minima sit error alias ipsum deleniti nemo iure.
+    </div>
+</main> 
+<div class="footer-basic">
+    <footer>
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Home</a></li>
+            <li class="list-inline-item"><a href="#">Services</a></li>
+            <li class="list-inline-item"><a href="#">About</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Company Name © 2023</p>
+    </footer>
+</div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+ 
+</html>

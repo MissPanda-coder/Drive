@@ -1,0 +1,78 @@
+// --------------header
+
+@mixin before{
+    height: 0%;
+    width: 2px;
+   }
+   
+ 
+   @mixin hover{
+    box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+                 -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+       inset -4px -4px 6px 0 rgba(255,255,255,.2),
+       inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+   }
+
+@mixin btn{
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+      7px 7px 20px 0px rgba(0,0,0,.1),
+      4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    background: rgb(146, 101, 218);
+    background: linear-gradient(0deg, rgb(127, 103, 165) 0%, rgb(175, 99, 241) 100%);
+    border: none;
+    &:before{
+        @include before;
+    }
+    &:hover{
+        @include hover;
+    }
+   }
+
+.btnSearch{
+    @include btn;
+}
+  //  -------------Main
+   #photo{
+    background-image: url("/img/beausset.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:360px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: end;
+  
+}
+
+#title{
+    font-family: 'Ephesis', cursive;
+    font-size: 7em;
+    width:60%;
+}
+
+.main__div-bienvenue{
+    padding:50px 0 100px 0;
+    width:60%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 1px solid rgba(96,9,240,1);
+
+}
+
+.accueil{
+    height:100vh;
+}
+
