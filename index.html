@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./styles/css/style.css">
     <title>
       Le Beausset Drive, faites-vous livrer partout dans le Beausset
     </title>
@@ -23,9 +23,10 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Le Beausset Drive</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Accueil"
@@ -38,8 +39,9 @@
                 <a class="nav-link" href="#contact">Qui sommes-nous</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" id="searchbar" role="search">
               <input
+              name="search" id="search"
                 class="form-control me-2"
                 type="search"
                 placeholder="rechercher"
@@ -81,7 +83,7 @@ Rendez-vous dans notre rubrique "boutiques partenaires" pour découvrir les bout
         </div>
     </nav>
    <div class=" col-lg-2">
-    <select class=" form-select select__value" aria-label="Toutes les catégories">
+    <select class=" form-select select__value" id="select" aria-label="Toutes les catégories">
         <option selected>Toutes les catégories</option>
         <option value="1">Bijoux</option>
         <option value="2">Boulangerie/pâtisserie</option>
@@ -95,63 +97,63 @@ Rendez-vous dans notre rubrique "boutiques partenaires" pour découvrir les bout
 
 
 <section class="section__margin">
-    <div class="col-lg-7 gap__photos" id="main__grid-size">
+    <div class="col-lg-7 col-md-12 gap__photos" id="main__grid-size">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-5">
             <img class="main__img" src="img/lePetrinDuBeausset.jpg" alt="boulangerie le pétrin du beausset">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-7 boutique">
             <p class="main__enseignes">Le Pétrin du Beausset</p>
             <p>La boulangerie Le Pétrin du Beausset vous propose à la livraison de délicieuses pâtisseries et viennoiseries
                 faites maison. Cliquez sur commander pour découvrir leurs produits et vous faire livrer ceux que vous aurez commandés.
             </p>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-12">
             <button class="btnSearchCommand">Commander</button>
         </div>
     </div>
 </div>
 <div class="col-lg-7 gap__photos">
     <div class="row">
-        <div class="col-lg-4" >
+        <div class="col-lg-4 col-md-5" >
             <img class="main__img" src="img/saoya.jpg" alt="Devanture de la boutique Sayoa créateur de bijoux">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-7 boutique">
             <p class="main__enseignes">Sayoa</p>
             <p>Du Made in France bien sûr… Un atelier-boutique au Beausset depuis 1991, une entreprise familiale (mère et fille en sont aujourd’hui les créatrices), qui su renouveler ses collections tout en gardant un style reconnaissable plein de charme. 
             </p>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-12">
             <button class="btnSearchCommand">Commander</button>
         </div>
     </div>
 </div>
-<div class="col-lg-7 gap__photos">
+<div class="col-lg-7 col-md-12 gap__photos">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-5 boutique">
             <img class="main__img" src="img/pharmacieArcade.jpg" alt="Devanture de la pharmacie des Arcades">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-7">
             <p class="main__enseignes">Pharmacie des Arcades</p>
             <p>L’officine vous propose désormais de nombreux services en ligne : envoi d’ordonnance, rendez-vous consultations, conseils santé… L’équipe vous orientera sur la solution la plus adaptée à votre pathologie.
             </p>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-12">
             <button class="btnSearchCommand">Commander</button>
         </div>
     </div>
 </div>
 <div class="col-lg-7 gap__photos">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-5">
             <img class="main__img" src="img/lePetrinDuBeausset.jpg" alt="boulangerie le pétrin du beausset">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 col-md-6 boutique">
             <p class="main__enseignes">Bergamote et Chocolat</p>
             <p>Vous avez un petit creux. Envie d’une petite collation ? Dans la « Bergamote et chocolat », laissez-vous inspirer par un vaste choix de snacks faits maison.
             </p>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-12">
             <button class="btnSearchCommand">Commander</button>
         </div>
     </div>

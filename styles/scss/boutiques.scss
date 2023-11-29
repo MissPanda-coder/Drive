@@ -40,3 +40,28 @@
     @include btn;
     margin:80px 0 0 40px;
 }
+
+
+// TELEPHONES
+@media screen and (max-width: 768px) {
+.btnSearchCommand{
+margin:0;
+}
+
+.gap__photos{
+    display: block;
+    margin-bottom: 30px;
+}
+}
+
+
+
+/*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+
+.btnSearchCommand{
+margin:0;
+position: relative;
+left:550px;
+}
+}

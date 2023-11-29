@@ -44,6 +44,7 @@
 .btnSearch{
     @include btn;
 }
+
   //  -------------Main
    #photo{
     background-image: url("/img/beausset.jpg");
@@ -76,3 +77,40 @@
     height:100vh;
 }
 
+
+// TELEPHONES
+@media screen and (max-width: 768px) {
+    #title{
+        font-family: 'Ephesis', cursive;
+        font-size: 3em;
+        width:100%;
+    }
+
+    #photo{
+        justify-content: center;
+    align-items: start;
+    }
+
+    .main__div-bienvenue{
+        width:90%;
+    }
+}
+
+
+
+/*    TABLETTES  */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+#title{
+    font-family: 'Ephesis', cursive;
+    font-size: 5em;
+    width:80%;
+}
+
+#navbarNavDropdown{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+    
+}
+
+}
